@@ -1,0 +1,55 @@
+/* phone display */
+@media (min-width: 576px) {
+  .html {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "body";
+  }
+
+  /* desktop display */
+@media (min-width: 992px) {
+  .html {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "body";
+  }
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2ccec0;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  display: grid;
+  grid-template-rows: 100%;
+  font-family: 'Ubuntu', sans-serif;;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: 10% 20% 10% 20% 10% 20% 10%;
+  grid-row: 2/3;
+  background-color: #1b1b1b;
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+.left {
+  grid-column: 2/3;
+  text-align: center;
+  border-top: 5vh solid #33a8dd;
+}
+.middle {
+  grid-column: 4/5;
+  text-align: center;
+  border-top: 5vh solid #f36731;
+}
+.right {
+  grid-column: 6/7;
+  text-align: center;
+  border-top: 5vh solid #2ccec0;
+}
